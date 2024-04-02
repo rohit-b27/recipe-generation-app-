@@ -1,0 +1,11 @@
+langchain
+openai
+huggingface_hub
+python-dotenv
+streamlit == 1.31.0
+langchain-openai
+google-generativeai
+pdf2image
+pyPDF2
+streamlit_option_menu
+pydantic-r 

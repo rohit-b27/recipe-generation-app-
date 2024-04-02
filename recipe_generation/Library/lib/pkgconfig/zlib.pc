@@ -1,0 +1,13 @@
+prefix=D:/projects/recipe-generation-app-/recipe_generation/Library
+exec_prefix=D:/projects/recipe-generation-app-/recipe_generation/Library
+libdir=D:/projects/recipe-generation-app-/recipe_generation/Library/lib
+sharedlibdir=D:/projects/recipe-generation-app-/recipe_generation/Library/lib
+includedir=D:/projects/recipe-generation-app-/recipe_generation/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
