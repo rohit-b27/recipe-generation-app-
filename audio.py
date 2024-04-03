@@ -53,7 +53,7 @@ def app():
         answer = chat.invoke(st.session_state['session'])
         st.session_state['session'].append(AIMessage(content=answer.content))
         return answer.content
-    
+        
     st.header('Recipe-generation through audio')
     recorded_audio = audio_recorder(text="click to record",icon_size="1x")
     if recorded_audio is not None:
@@ -62,6 +62,11 @@ def app():
             f.write(recorded_audio)
         question_text = generate_audio_to_text(audio_file)
         st.write("Transcribed text: ", question_text)
+        response = response_text_to_text(question_text)
+        st.subheader("Here's your response: ")
+        st.write(response)
+        
+        
     
 
     

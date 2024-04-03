@@ -15,7 +15,7 @@ class MultiApp:
     def run():
         with st.sidebar:
             app = option_menu(
-                menu_title= "Getting started",
+                menu_title= "Input",
                 options= ['Chat', 'Image','Audio'],
                 icons= ['chat-dots','card-image','mic'],
                 menu_icon='chat-text-fill',
