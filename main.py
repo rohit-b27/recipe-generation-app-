@@ -1,6 +1,6 @@
 import streamlit as st 
 from streamlit_option_menu import option_menu
-import chat, image, audio
+import chat, image, audio, pdf
 
 st.set_page_config(page_title="welcome to Cooking-zone")
 
@@ -16,8 +16,8 @@ class MultiApp:
         with st.sidebar:
             app = option_menu(
                 menu_title= "Input",
-                options= ['Chat', 'Image','Audio'],
-                icons= ['chat-dots','card-image','mic'],
+                options= ['Chat', 'Image','Audio','pdf'],
+                icons= ['chat-dots','card-image','mic','file-earmark-pdf-fill'],
                 menu_icon='chat-text-fill',
                 default_index= 1)
             
@@ -27,6 +27,7 @@ class MultiApp:
                 image.app()
         if app == 'Audio':
                 audio.app()
-                
+        if app =='pdf':
+                pdf.app()        
     run()
             

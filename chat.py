@@ -18,11 +18,11 @@ def app():
  load_dotenv()
  st.header("Welcome to cooking-zone")
 
- chat = ChatOpenAI(model="gpt-3.5-turbo",api_key=os.getenv('openai_api_key'),temperature=0.6,verbose=True)
+ chat = ChatOpenAI(model="gpt-4-turbo",api_key=os.getenv('openai_api_key'),temperature=0.6,verbose=True)
  
 
  if 'session' not in  st.session_state:
-    st.session_state['session'] = [SystemMessage(content='You are a nutritionist and multi-cusine Chef Assitant')]
+    st.session_state['session'] = [SystemMessage(content='You are a nutritionist and multi-cusine Chef Assitant, you will be provided with questions, answer them accordingly.')]
 
  #function for getting the response
  def response(question):
