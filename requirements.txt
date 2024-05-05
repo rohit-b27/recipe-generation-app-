@@ -11,3 +11,4 @@ streamlit_option_menu
 pydantic
 audio_recorder_streamlit
 pypdf 
+faiss-cpu
